@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace DoubleLinkedList
 {
@@ -56,7 +57,13 @@ namespace DoubleLinkedList
                 Console.Write(node + " ");
             }
             Console.WriteLine();
+            var nodes = from list in newList where (list.GetValue().Equals("2")) select list;
             
+            foreach (dNode<String> node in nodes)
+            {
+                Console.Write(node + " ");
+            }
+            Console.WriteLine();
             
         }
         

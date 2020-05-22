@@ -8,11 +8,11 @@
  namespace DoubleLinkedList
 
 {
-    internal class dNode<T> where T: IComparable<T>
+    public class dNode<T> where T: IComparable<T>
     {
         internal dNode<T> next;
         internal dNode<T> prev;
-        private T val;
+        private T val { get;}
 
         public dNode (T value)
         {
@@ -30,20 +30,21 @@
         {
             return val;
         }
-
+        
+        
     }
 
-    internal class DoublyLinkedList<T> : IEnumerator, IEnumerable where T: IComparable<T>
+    public class DoublyLinkedList<T> : IEnumerable where T: IComparable<T>
     {
         private dNode<T> head;
         private dNode<T> tail;
-        private int size = 0;
-        private int pos = -1;
+        private int size {get; set;}
         //Constructors for DoublyLinkedList 
         public DoublyLinkedList()
         {
             head = null;
             tail = null;
+            size = 0;
         }
         
         public DoublyLinkedList(T value)
@@ -212,39 +213,54 @@
             return size;
         }
 
+        private class MyEnumenator : IEnumerator
+        {
+            public DoublyLinkedList<T> myList;
+            int pos = -1;
+            public MyEnumenator(DoublyLinkedList<T> list)
+            {
+                myList = list;
+            }
+            
+            private IEnumerator GetEnumerator()
+            {
+                return (IEnumerator)this;
+            }
+
+            //IENumerator
+            public bool MoveNext()
+            {
+                pos++;
+                return (pos < myList.GetSize());
+            }
+        
+            //IENumerable
+            public void Reset()
+            {
+                pos = 0;
+            }
+        
+            //IENumberable
+            public object Current
+            {
+                get
+                {
+                    try
+                    {
+                        return myList.GetNode(pos);
+                    }
+                    catch (IndexOutOfRangeException)
+                    {
+                        throw new InvalidOperationException();
+                    }
+                
+                }
+            }
+        }
+        
         public IEnumerator GetEnumerator()
         {
-            return (IEnumerator) this;
-        }
-
-        //IENumerator
-        public bool MoveNext()
-        {
-            pos++;
-            return (pos < size);
-        }
-        
-        //IENumerable
-        public void Reset()
-        {
-            pos = 0;
-        }
-        
-        //IENumberable
-        public object Current
-        {
-            get
-            {
-                try
-                {
-                    return GetNode(pos);
-                }
-                catch (IndexOutOfRangeException)
-                {
-                    throw new InvalidOperationException();
-                }
-                
-            }
+            return new MyEnumenator(this);
         }
 
         //Swap two elements in the DLL
