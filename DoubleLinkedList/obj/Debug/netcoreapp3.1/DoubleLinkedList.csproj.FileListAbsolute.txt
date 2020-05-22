@@ -1,0 +1,13 @@
+C:\Users\wardw\RiderProjects\DoubleLinkedList\DoubleLinkedList\bin\Debug\netcoreapp3.1\DoubleLinkedList.exe
+C:\Users\wardw\RiderProjects\DoubleLinkedList\DoubleLinkedList\bin\Debug\netcoreapp3.1\DoubleLinkedList.deps.json
+C:\Users\wardw\RiderProjects\DoubleLinkedList\DoubleLinkedList\bin\Debug\netcoreapp3.1\DoubleLinkedList.runtimeconfig.json
+C:\Users\wardw\RiderProjects\DoubleLinkedList\DoubleLinkedList\bin\Debug\netcoreapp3.1\DoubleLinkedList.runtimeconfig.dev.json
+C:\Users\wardw\RiderProjects\DoubleLinkedList\DoubleLinkedList\bin\Debug\netcoreapp3.1\DoubleLinkedList.dll
+C:\Users\wardw\RiderProjects\DoubleLinkedList\DoubleLinkedList\bin\Debug\netcoreapp3.1\DoubleLinkedList.pdb
+C:\Users\wardw\RiderProjects\DoubleLinkedList\DoubleLinkedList\obj\Debug\netcoreapp3.1\DoubleLinkedList.csprojAssemblyReference.cache
+C:\Users\wardw\RiderProjects\DoubleLinkedList\DoubleLinkedList\obj\Debug\netcoreapp3.1\DoubleLinkedList.csproj.CoreCompileInputs.cache
+C:\Users\wardw\RiderProjects\DoubleLinkedList\DoubleLinkedList\obj\Debug\netcoreapp3.1\DoubleLinkedList.AssemblyInfoInputs.cache
+C:\Users\wardw\RiderProjects\DoubleLinkedList\DoubleLinkedList\obj\Debug\netcoreapp3.1\DoubleLinkedList.AssemblyInfo.cs
+C:\Users\wardw\RiderProjects\DoubleLinkedList\DoubleLinkedList\obj\Debug\netcoreapp3.1\DoubleLinkedList.dll
+C:\Users\wardw\RiderProjects\DoubleLinkedList\DoubleLinkedList\obj\Debug\netcoreapp3.1\DoubleLinkedList.pdb
+C:\Users\wardw\RiderProjects\DoubleLinkedList\DoubleLinkedList\obj\Debug\netcoreapp3.1\DoubleLinkedList.genruntimeconfig.cache
